@@ -260,8 +260,11 @@ ul { list-style: none; }
 .footer-newsletter input:focus { border-color: var(--secondary-container); box-shadow: 0 0 0 3px var(--soft-peach); }
 .footer-bottom {
   border-top: 1px solid rgba(0,0,0,0.08); padding: 16px 0;
-  color: var(--on-surface-variant); opacity: 0.6; font-size: 16px;
+  color: var(--on-surface-variant); font-size: 16px;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;
 }
+.footer-bottom > span { opacity: 0.6; }
+.footer-bottom .social-links { margin-top: 0; }
 
 /* ===== Support Page ===== */
 .support-hero { padding: 48px 0; text-align: center; }
