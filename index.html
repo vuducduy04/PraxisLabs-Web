@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>PraxisLabs - Precision Data for Robotics</title>
+<meta name="description" content="PraxisLabs provides labeled robot data, matched with different robots and components. Precision data that fuels the next generation of robotics."/>
+<link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar" id="navbar">
+  <div class="navbar-inner">
+    <div class="navbar-brand">
+      <div class="logo-circle"><img alt="PraxisLabs Logo" src="praxislabs_robotics_data_website/photos/logo.png"/></div>
+      <span class="brand-name" style="color:#fff">PraxisLabs</span>
+    </div>
+    <div class="navbar-links" id="nav-links">
+      <a href="#" data-page="home" class="active">Home</a>
+      <a href="#" data-page="products">Products</a>
+      <a href="#" data-page="support">Support</a>
+      <a href="#" data-page="about">About us</a>
+    </div>
+    <div style="display:flex;align-items:center;gap:16px">
+      <button class="btn-contact-nav" data-page="contact">Contact us</button>
+      <button class="hamburger" id="hamburger"><span class="material-symbols-outlined">menu</span></button>
+    </div>
+  </div>
+</nav>
+
+<div class="page-content">
+
+<!-- ===== HOME PAGE ===== -->
+<div class="page active" id="page-home">
+  <section class="hero">
+    <div class="hero-bg"><img alt="Robotics facility" src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1400&q=80"/></div>
+    <div class="container hero-content">
+      <div class="hero-grid">
+        <div>
+          <div style="margin-bottom:24px"><span class="chip" style="background:rgba(64,98,124,0.2);color:#a8cbe9;border:1px solid rgba(168,203,233,0.3);border-radius:9999px">SYS_STATUS: ACTIVE</span></div>
+          <h1 class="display-lg" style="margin-bottom:16px">PraxisLabs</h1>
+          <h2 class="headline-md hero-tagline">Precision Data that Fuels the Next Generation of Robotics</h2>
+          <div class="hero-buttons">
+            <button class="btn-primary" data-page="contact">Request a Pilot <span class="material-symbols-outlined" style="font-size:20px">arrow_forward</span></button>
+            <button class="btn-secondary" onclick="document.getElementById('intro-section').scrollIntoView({behavior:'smooth'})">Learn More</button>
+          </div>
+        </div>
+        <div class="data-panel-wrap">
+          <div class="data-panel">
+            <div style="display:flex;justify-content:space-between;align-items:start"><span class="label-sm" style="color:#cae6ff">DATA_STREAM_ALPHA</span><span class="material-symbols-outlined" style="color:#fc5a29">analytics</span></div>
+            <div style="display:flex;flex-direction:column;gap:8px;margin-top:48px">
+              <div class="progress-bar"><div class="progress-fill" style="width:75%;background:#fc5a29"></div></div>
+              <div class="progress-bar"><div class="progress-fill" style="width:45%;background:#cae6ff"></div></div>
+              <div class="progress-bar"><div class="progress-fill" style="width:90%;background:#a8cbe9"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="intro-section" id="intro-section">
+    <div class="container" style="text-align:center">
+      <p class="body-lg" style="color:var(--on-surface-variant);max-width:768px;margin:0 auto">...</p>
+    </div>
+  </section>
+  <section class="services-section">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:48px">
+        <span class="label-sm" style="color:var(--secondary-container);text-transform:uppercase;display:block;margin-bottom:8px">Capabilities</span>
+        <h2 class="headline-md" style="color:var(--primary)">Core Service Architecture</h2>
+      </div>
+      <div class="services-grid">
+        <div class="card service-card"><div style="display:flex;justify-content:space-between;align-items:start;margin-bottom:16px"><div class="icon-box"><span class="material-symbols-outlined">rocket_launch</span></div><span class="chip">PHASE_1</span></div><h3 class="headline-md" style="font-size:18px;line-height:24px;color:var(--primary);margin-bottom:8px">Pilot Programs</h3><p class="body-md" style="color:var(--on-surface-variant)">Rapid deployment of test environments to validate data models against your specific hardware configurations.</p></div>
+        <div class="card service-card"><div style="display:flex;justify-content:space-between;align-items:start;margin-bottom:16px"><div class="icon-box"><span class="material-symbols-outlined">dataset</span></div><span class="chip">CORE</span></div><h3 class="headline-md" style="font-size:18px;line-height:24px;color:var(--primary);margin-bottom:8px">Training Data</h3><p class="body-md" style="color:var(--on-surface-variant)">High-volume, rigorously annotated datasets tailored for industrial computer vision and kinetic prediction.</p></div>
+        <div class="card service-card"><div style="display:flex;justify-content:space-between;align-items:start;margin-bottom:16px"><div class="icon-box"><span class="material-symbols-outlined">cable</span></div><span class="chip">SYSTEM</span></div><h3 class="headline-md" style="font-size:18px;line-height:24px;color:var(--primary);margin-bottom:8px">Integration</h3><p class="body-md" style="color:var(--on-surface-variant)">Seamless API connections and pipeline development to feed data directly into your operational stack.</p></div>
+        <div class="card service-card"><div style="display:flex;justify-content:space-between;align-items:start;margin-bottom:16px"><div class="icon-box"><span class="material-symbols-outlined">support_agent</span></div><span class="chip">24/7</span></div><h3 class="headline-md" style="font-size:18px;line-height:24px;color:var(--primary);margin-bottom:8px">Support</h3><p class="body-md" style="color:var(--on-surface-variant)">Continuous monitoring and expert engineering support to maintain data fidelity as your systems evolve.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="cta-banner">
+    <div class="container"><div class="cta-inner">
+      <div><h2 class="headline-md" style="color:var(--primary);margin-bottom:8px">Ready to run a pilot?</h2><p class="body-md" style="color:var(--on-surface-variant)">Book a free consultation with our experts to discuss your data requirements.</p></div>
+      <button class="btn-primary" data-page="contact" style="white-space:nowrap">Book Consultation <span class="material-symbols-outlined" style="font-size:20px">calendar_month</span></button>
+    </div></div>
+  </section>
+</div>
+
+<!-- ===== SUPPORT PAGE ===== -->
+<div class="page" id="page-support">
+  <main class="container" style="padding-top:48px;padding-bottom:48px">
+    <section class="support-hero">
+      <h1 class="display-lg" style="color:var(--primary);margin-bottom:16px">How can we help?</h1>
+      <div class="search-bar"><span class="material-symbols-outlined">search</span><input type="text" placeholder="Search for your problems…"/></div>
+    </section>
+    <section class="contact-grid">
+      <div class="card contact-option"><div class="icon-circle"><span class="material-symbols-outlined">mail</span></div><h3 class="headline-md" style="color:var(--primary);margin-bottom:8px">Email Support</h3><p class="body-md" style="color:var(--on-surface-variant);margin-bottom:16px">Get in touch with our technical team directly.</p><a href="mailto:support@praxis.com" class="btn-text" style="color:var(--secondary-container);margin-top:auto">support@praxis.com</a></div>
+      <div class="card contact-option"><div class="icon-circle"><span class="material-symbols-outlined">confirmation_number</span></div><h3 class="headline-md" style="color:var(--primary);margin-bottom:8px">Submit a Ticket</h3><p class="body-md" style="color:var(--on-surface-variant);margin-bottom:16px">Report an issue and track its resolution status.</p><button class="btn-sm" style="margin-top:auto">Open Portal</button></div>
+      <div class="card contact-option" style="position:relative;overflow:hidden"><div style="position:absolute;top:16px;right:16px" class="chip">Active Pilots Only</div><div class="icon-circle" style="margin-top:8px"><span class="material-symbols-outlined">phone</span></div><h3 class="headline-md" style="color:var(--primary);margin-bottom:8px">Phone Support</h3><p class="body-md" style="color:var(--on-surface-variant);margin-bottom:16px">Immediate assistance for critical deployment issues.</p><button class="btn-outline-navy" style="margin-top:auto">Request Callback</button></div>
+    </section>
+    <section class="faq-section">
+      <h2 class="display-lg-mobile" style="color:var(--primary);margin-bottom:24px;padding-bottom:8px;border-bottom:1px solid var(--outline-variant)">Frequently Asked Questions</h2>
+      <div id="faq-list"></div>
+    </section>
+    <div class="response-time"><span class="material-symbols-outlined" style="font-size:20px">schedule</span><span class="label-sm">We reply within 1 business day</span></div>
+  </main>
+</div>
+
+<!-- ===== ABOUT PAGE ===== -->
+<div class="page" id="page-about">
+  <header class="about-hero">
+    <div class="container"><div class="about-hero-grid">
+      <div>
+        <span class="chip" style="margin-bottom:16px;display:inline-block;border-radius:9999px;border:1px solid var(--outline-variant);background:var(--surface-high)">SYSTEM_INIT: ABOUT_US</span>
+        <h1 class="display-lg" style="color:var(--primary);margin-bottom:24px">Engineering the future of high-velocity logistics.</h1>
+        <p class="body-lg" style="color:var(--on-surface-variant);max-width:640px">We are building the foundational robotics infrastructure to make automation accessible, reliable, and scalable across Southeast Asia and beyond.</p>
+      </div>
+      <div class="about-hero-img"><img alt="Robotic arm" src="https://images.unsplash.com/photo-1561557944-6e7860d1a7eb?w=800&q=80"/></div>
+    </div></div>
+  </header>
+  <section style="padding:48px 0"><div class="container"><div class="mission-vision">
+    <div class="card mv-card"><div class="accent-bar" style="background:var(--secondary-container)"></div><div style="display:flex;justify-content:space-between;align-items:start;margin-bottom:16px"><h2 class="headline-md" style="color:var(--primary)">Mission</h2><span class="chip">EXEC_01</span></div><p class="body-md" style="color:var(--on-surface-variant)">To actively support robotics companies and startups by accelerating hardware and software adoption throughout Vietnam and the broader Southeast Asian region. We provide the technical backbone required for rapid scaling.</p><div class="tags"><span class="chip-outline">Robotics</span><span class="chip-outline">Vietnam</span><span class="chip-outline">SEA Adoption</span></div></div>
+    <div class="card mv-card"><div class="accent-bar" style="background:var(--primary-container)"></div><div style="display:flex;justify-content:space-between;align-items:start;margin-bottom:16px"><h2 class="headline-md" style="color:var(--primary)">Vision</h2><span class="chip">EXEC_02</span></div><p class="body-md" style="color:var(--on-surface-variant)">A future where every manufacturer, warehouse operator, and logistics provider — regardless of size — can afford to benefit from automation. We envision high-precision kinetic systems as standard operational components.</p><div class="tags"><span class="chip-outline">Affordability</span><span class="chip-outline">Logistics</span><span class="chip-outline">Manufacturing</span></div></div>
+  </div></div></section>
+  <section class="story-section"><div class="container"><div class="story-grid">
+    <div class="story-images"><img alt="Factory floor" src="https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=600&q=80"/><img alt="Team engineering" src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&q=80"/></div>
+    <div><h2 class="headline-md" style="color:var(--primary);margin-bottom:16px">Our Story</h2>
+      <p class="body-md" style="color:var(--on-surface-variant);margin-bottom:16px">PraxisLabs emerged from a critical observation: while the demand for automation in Southeast Asia was accelerating, the infrastructure to support it remained fragmented and cost-prohibitive. Our founders recognized that the barrier wasn't just hardware, but the seamless integration of heavy industry mechanisms with high-velocity data systems.</p>
+      <p class="body-md" style="color:var(--on-surface-variant);margin-bottom:16px">We built our foundational architecture to bridge this gap. By developing modular, highly reliable robotic components alongside a sophisticated data layer, we created a system that feels engineered rather than merely assembled.</p>
+      <p class="body-md" style="color:var(--on-surface-variant)">Today, PraxisLabs operates at the intersection of rugged reliability and technical superiority. We are dedicated to lowering the barrier to entry for advanced robotics across Vietnam and SEA.</p>
+    </div>
+  </div></div></section>
+  <section class="timeline-section"><div class="container">
+    <h2 class="headline-md" style="color:var(--primary);margin-bottom:48px;text-align:center">Operational Roadmap</h2>
+    <div class="timeline"><div class="timeline-line"></div>
+      <div class="timeline-item"><div class="timeline-left"><h3 class="headline-md" style="color:var(--primary)">Founding</h3><p class="body-md" style="color:var(--on-surface-variant);margin-top:8px">Establishment of PraxisLabs core engineering team and initial architectural framework.</p></div><div class="timeline-dot" style="border:2px solid var(--secondary-container)"><div class="timeline-dot-inner" style="background:var(--secondary-container)"></div></div><div class="timeline-right"><span class="timeline-badge" style="background:var(--secondary-fixed-dim);color:var(--secondary)">2025</span></div></div>
+      <div class="timeline-item"><div class="timeline-left"><span class="timeline-badge" style="background:var(--secondary-fixed-dim);color:var(--secondary)">06/2026</span></div><div class="timeline-dot" style="border:2px solid var(--primary-container)"><div class="timeline-dot-inner" style="background:var(--primary-container)"></div></div><div class="timeline-right"><h3 class="headline-md" style="color:var(--primary)">First Pilot</h3><p class="body-md" style="color:var(--on-surface-variant);margin-top:8px">Deployment of beta systems in selected logistics hubs across Vietnam.</p></div></div>
+      <div class="timeline-item"><div class="timeline-left"><h3 class="headline-md" style="color:var(--primary)">Key Product Launches</h3><p class="body-md" style="color:var(--on-surface-variant);margin-top:8px">Full commercial availability of our primary automation suite for the SEA market.</p></div><div class="timeline-dot" style="border:2px solid var(--outline)"><div class="timeline-dot-inner" style="background:var(--outline)"></div></div><div class="timeline-right"><span class="timeline-badge" style="border:1px solid var(--outline);color:var(--outline)">12/2026</span></div></div>
+    </div>
+  </div></section>
+  <section class="team-section"><div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:end;margin-bottom:48px;padding-bottom:16px;border-bottom:1px solid var(--outline-variant)"><div><span class="label-sm" style="color:var(--primary);display:block;margin-bottom:8px">PERSONNEL_DATA</span><h2 class="headline-md" style="color:var(--primary)">Core Team</h2></div></div>
+    <div class="team-grid" id="team-grid"></div>
+  </div></section>
+  <section class="hiring-section"><div class="container">
+    <h2 class="display-lg" style="margin-bottom:16px">Join the Interface</h2>
+    <p class="body-lg" style="color:var(--on-primary-container);max-width:640px;margin:0 auto 24px;opacity:0.85">We are actively seeking engineers, designers, and operators who thrive at the intersection of heavy industry and high-velocity data.</p>
+    <a href="#" class="btn-primary">View Open Roles</a>
+  </div></section>
+</div>
+
+<!-- ===== CONTACT PAGE ===== -->
+<div class="page" id="page-contact">
+  <main class="container" style="padding-top:48px;padding-bottom:48px">
+    <div class="contact-header">
+      <h1 class="display-lg" style="color:var(--primary);margin-bottom:16px">Get in touch</h1>
+      <p class="body-lg" style="color:var(--on-surface-variant)">Whether you have a question about features, pricing, need a demo, or anything else, our team is ready to answer all your questions.</p>
+    </div>
+    <div class="contact-layout">
+      <div class="card form-card">
+        <div style="display:flex;justify-content:space-between;align-items:start;margin-bottom:16px"><h2 class="headline-md" style="color:var(--primary)">Send a Message</h2><span class="chip">24HR_SLA</span></div>
+        <p class="body-md" style="color:var(--on-surface-variant);margin-bottom:24px;border-left:2px solid var(--secondary-container);padding-left:8px">We'll get back to you within 1 business day</p>
+        <form id="contact-form" onsubmit="return handleSubmit(event)">
+          <div class="form-row"><div class="form-group"><label for="firstName">First Name</label><input type="text" id="firstName" required/></div><div class="form-group"><label for="lastName">Last Name</label><input type="text" id="lastName" required/></div></div>
+          <div class="form-row"><div class="form-group"><label for="workEmail">Work Email</label><input type="email" id="workEmail" required/></div><div class="form-group"><label for="company">Company</label><input type="text" id="company"/></div></div>
+          <div class="form-group"><label for="topic">Topic</label><select id="topic"><option>Sales Inquiry</option><option>Technical Support</option><option>Partnership</option><option>Pilot Program</option><option>Other</option></select></div>
+          <div class="form-group"><label for="message">Message</label><textarea id="message" rows="4"></textarea></div>
+          <button type="submit" class="btn-primary" style="width:100%;margin-top:24px">Submit Request</button>
+        </form>
+      </div>
+      <div class="sidebar-cards">
+        <div class="card">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:16px"><span class="material-symbols-outlined" style="color:var(--secondary-container);font-variation-settings:'FILL' 1">corporate_fare</span><h3 class="headline-md" style="color:var(--primary)">Headquarters</h3></div>
+          <div style="display:flex;align-items:start;gap:8px;color:var(--on-surface-variant)"><span class="material-symbols-outlined" style="font-size:20px;color:var(--outline);margin-top:2px">location_on</span><span>Praxis Tower<br/>Gia Lam District<br/>Hanoi</span></div>
+          <div style="height:150px;margin-top:12px;border-radius:var(--radius);overflow:hidden;border:1px solid var(--outline-variant);background:var(--surface-high);display:flex;align-items:center;justify-content:center"><span class="material-symbols-outlined" style="font-size:48px;color:var(--outline)">map</span></div>
+        </div>
+        <div class="card">
+          <h3 class="headline-md" style="color:var(--primary);margin-bottom:16px">Direct Contact</h3>
+          <div style="display:flex;flex-direction:column;gap:16px">
+            <div class="contact-row"><span class="material-symbols-outlined">mail</span><div><p class="label-sm" style="color:var(--on-surface-variant)">EXECUTIVE</p><a href="mailto:ceo@praxis.com" class="body-md" style="color:var(--primary)">ceo@praxis.com</a></div></div>
+            <div class="contact-row"><span class="material-symbols-outlined">support_agent</span><div><p class="label-sm" style="color:var(--on-surface-variant)">TECHNICAL SUPPORT</p><a href="mailto:support@praxis.com" class="body-md" style="color:var(--primary)">support@praxis.com</a></div></div>
+            <div class="contact-row"><span class="material-symbols-outlined">call</span><div><p class="label-sm" style="color:var(--on-surface-variant)">PHONE</p><p class="body-md" style="color:var(--primary)">0987654321</p></div></div>
+          </div>
+        </div>
+        <div class="card hours-card">
+          <div><p class="label-sm" style="color:var(--on-surface-variant);margin-bottom:4px">OPERATING HOURS</p><p class="body-md" style="color:var(--primary);font-weight:600">9:00 a.m. - 6:00 p.m.</p></div>
+          <span class="online-badge"><span class="online-dot"></span> ONLINE</span>
+        </div>
+        <div style="padding:16px 0">
+          <p class="label-sm" style="color:var(--on-surface-variant);margin-bottom:8px">FOLLOW US</p>
+          <div class="social-links">
+            <a href="#" title="LinkedIn"><img src="praxislabs_robotics_data_website/photos/icon-LinkedIn.png" alt="LinkedIn" class="social-icon"/></a>
+            <a href="#" title="X / Twitter"><img src="praxislabs_robotics_data_website/photos/icon-X.png" alt="X" class="social-icon"/></a>
+            <a href="#" title="YouTube"><img src="praxislabs_robotics_data_website/photos/icon-Youtube.png" alt="YouTube" class="social-icon"/></a>
+            <a href="#" title="Facebook"><img src="praxislabs_robotics_data_website/photos/icon-Facebook.png" alt="Facebook" class="social-icon"/></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<!-- ===== PRODUCTS PAGE (placeholder) ===== -->
+<div class="page" id="page-products">
+  <div class="container" style="padding:80px 0;text-align:center">
+    <span class="chip" style="margin-bottom:16px;display:inline-block">COMING_SOON</span>
+    <h1 class="display-lg" style="color:var(--primary);margin-bottom:16px">Products</h1>
+    <p class="body-lg" style="color:var(--on-surface-variant);max-width:480px;margin:0 auto">Our product catalog is being finalized. Contact us to learn about our current offerings.</p>
+    <button class="btn-primary" data-page="contact" style="margin-top:32px">Contact Us</button>
+  </div>
+</div>
+
+</div><!-- end page-content -->
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer" id="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><div class="brand-name">PraxisLabs</div><p class="body-md" style="color:var(--on-surface-variant)">Kinetic precision for the industrial enterprise.</p></div>
+      <div><h4>Links</h4><a href="#" data-page="home">Home</a><a href="#" data-page="products">Products</a><a href="#" data-page="support">Support</a><a href="#" data-page="about">About Us</a></div>
+      <div><h4>Legal</h4><a href="#">Legal</a><a href="#">Privacy Policy</a></div>
+      <div><h4>Stay Updated</h4><div class="footer-newsletter"><input type="email" placeholder="Enter your email"/><button class="btn-sm" style="width:100%;justify-content:center">Join Newsletter</button></div></div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 PraxisLabs. All right reserved.</div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
