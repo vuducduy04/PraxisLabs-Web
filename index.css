@@ -494,3 +494,147 @@ ul { list-style: none; }
   .hero-buttons { flex-direction: column; }
   .btn-primary, .btn-secondary { width: 100%; }
 }
+@import url('../index.css');
+
+/* ===== Radius Overrides ===== */
+:root {
+  --radius-sm: 0.5rem;
+  --radius: 1rem;
+  --radius-lg: 1.5rem;
+  --radius-xl: 2rem;
+}
+
+/* ===== Body: gradient background so glass has depth ===== */
+body {
+  background: linear-gradient(145deg, #e8f0f8 0%, #f0eaf8 40%, #e4eff7 100%);
+  background-attachment: fixed;
+}
+
+/* ===== Navbar: dark glass ===== */
+.navbar {
+  background: rgba(0, 30, 48, 0.72);
+  backdrop-filter: blur(28px);
+  -webkit-backdrop-filter: blur(28px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ===== Cards: frosted glass ===== */
+.card {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: var(--radius-xl);
+  box-shadow: 0 8px 32px rgba(12, 52, 76, 0.10), inset 0 1px 0 rgba(255,255,255,0.8);
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(12, 52, 76, 0.15), inset 0 1px 0 rgba(255,255,255,0.9);
+}
+
+/* ===== Buttons: pill shaped ===== */
+.btn-primary, .btn-secondary, .btn-contact-nav, .btn-sm {
+  border-radius: var(--radius-full);
+}
+.btn-outline-navy { border-radius: var(--radius-full); }
+
+/* ===== Chips: more rounded ===== */
+.chip { border-radius: var(--radius-full); }
+.chip-outline { border-radius: var(--radius-full); }
+
+/* ===== Inputs / Selects: rounder ===== */
+.form-group input,
+.form-group select,
+.form-group textarea {
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+.search-bar input {
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* ===== Data panel (hero): enhanced glass ===== */
+.data-panel {
+  background: rgba(64, 98, 124, 0.25);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(168, 203, 233, 0.25);
+  border-radius: var(--radius-xl);
+}
+
+/* ===== Progress bars: rounder ===== */
+.progress-bar, .progress-fill { border-radius: var(--radius-full); }
+
+/* ===== CTA Banner: glass ===== */
+.cta-banner {
+  background: rgba(238, 242, 248, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* ===== Intro section: glass ===== */
+.intro-section {
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* ===== FAQ items: glass ===== */
+.faq-item {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: var(--radius-lg);
+}
+
+/* ===== Contact rows: glass ===== */
+.contact-row {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: var(--radius);
+}
+
+/* ===== Social links: rounder ===== */
+.social-links a {
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* ===== Footer: glass ===== */
+.footer {
+  background: rgba(231, 235, 237, 0.65);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-top: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+/* ===== Timeline badge: rounder ===== */
+.timeline-badge { border-radius: var(--radius-full); }
+
+/* ===== Navbar brand logo circle: rounder ===== */
+.navbar-brand .logo-circle { border-radius: var(--radius-lg); }
+
+/* ===== Team card photo: rounder ===== */
+.team-card .photo { border-radius: var(--radius-lg); }
+.team-card .photo .id-badge { border-radius: var(--radius-full); }
+
+/* ===== About hero image: rounder ===== */
+.about-hero-img { border-radius: var(--radius-xl); }
+
+/* ===== Story images: rounder ===== */
+.story-images img { border-radius: var(--radius-lg); }
+
+/* ===== Online badge: rounder ===== */
+.online-badge { border-radius: var(--radius-full); }
+
+/* ===== Newsletter input: rounder ===== */
+.footer-newsletter input { border-radius: var(--radius-full); }
